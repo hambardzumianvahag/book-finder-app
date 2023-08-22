@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.Layout {
+  width: 100%;
   min-height: 100vh;
+  background-color: #fff9c4;
+}
+.Header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding-top: 50px;
+  color: #ffa000;
+}
+.Header h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.Footer a {
+  text-decoration: none;
+  color: #ffa000;
+}
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.Input input {
+  /* width: 400px; */
+  padding: 15px 120px;
+}
+.Input button {
+  background-color: #ffa000;
   color: white;
+  border: none;
+  padding: 14px 19px;
+  margin-left: -100px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 20px;
+  font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.Result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Result span {
+  color: gray;
+  margin: 10px auto;
+}
+.Close {
+  color: gray;
+  margin-right: -25px;
+  cursor: pointer;
+  z-index: 2;
+}
+.book-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px;
+}
+.book-info img{
+  width: 100px;
+}
+.each-book {
+  width: 500px;
+  height: 250px;
+  border: 1px solid gray;
+  background-color: white;
+}
+.book-info span {
+  color: black;
+  font-weight: bold;
+}
+.books{
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.books h4{
+  margin: 20px;
+  color: gray;
 }
